@@ -1,0 +1,46 @@
+version: "3.7"
+services:
+  nginx:
+    image: wshiyi/nginx
+    container_name: nginx
+    volumes:
+      - .:/app
+      - ./docker/nginx/www.ouzicode.com.conf:/etc/nginx/conf.d/www.ouzicode.com.conf
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      FASTCGI_PASS: php:9000
+      DOCUMENT_ROOT: /app/public
+
+  php:
+    image: wshiyi/php
+    container_name: php
+    tty: true
+    volumes:
+      - .:/app
+    environment:
+      REDIS_HOST: redis
+      DB_HOST: mysql
+
+  mysql:
+    image: wshiyi/mysql
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=www.ouzicode.com
+      - MYSQL_DATABASE=www.ouzicode.com
+      - MYSQL_USER=www.ouzicode.com
+      - MYSQL_PASSWORD=www.ouzicode.com
+    volumes:
+      - mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  redis:
+      image: redis:5
+      container_name: redis
+      ports:
+        - "6379:6379"
+
+volumes:
+  mysql:

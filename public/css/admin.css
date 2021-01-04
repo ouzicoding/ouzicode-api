@@ -1,0 +1,63 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  font-size: 625%;
+}
+main {
+  width: 88%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+main div.detail {
+  overflow: hidden;
+  margin-top: 0.6rem;
+}
+main div.signature {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+main aside {
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+main form select.tag-color option {
+  color: white;
+}
+main form select.tag-color option:nth-child(1) {
+  background: #3097D1;
+}
+main form select.tag-color option:nth-child(2) {
+  background: #BF5329;
+}
+main form select.tag-color option:nth-child(3) {
+  background: #2AB27B;
+}
+main form select.tag-color option:nth-child(4) {
+  background: #CBB956;
+}
+main form select.tag-color option:nth-child(5) {
+  background: #8EB4CB;
+}
+main form div.submit-form {
+  margin-top: 0.4rem;
+}
+main form div.submit-form div.submit-div {
+  overflow: hidden;
+  width: 20%;
+  margin: 0 auto;
+}
+main form div.submit-form div.submit-div button:nth-child(1) {
+  float: left;
+}
+main form div.submit-form div.submit-div button:nth-child(2) {
+  float: right;
+}
+footer {
+  height: 0.5rem;
+  text-align: center;
+  font-style: italic;
+  margin-top: 1rem;
+}

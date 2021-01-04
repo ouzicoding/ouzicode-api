@@ -1,0 +1,4 @@
+doc/html/
+vendor/
+zf-mkdoc-theme/
+phpunit.xml

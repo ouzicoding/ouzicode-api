@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 625%;
+}
+body{
+    background: #C9E4F1;
+}
+[v-cloak]{
+    display: none;
+}
+header{
+    background: -webkit-linear-gradient(#34AFD8,#10556D);
+    height: 0.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    &>div{
+        width: 88%;
+        height: 0.5rem;
+        margin: 0 auto;
+        border: none;
+        div.menu{
+            width: 68%;
+            float: left;
+            font-family: 'Microsoft YaHei';
+            font-size: 0.2rem;
+            nav{
+                background: none;
+                border: none;
+                div.navbar-header{
+                    width: 13%;
+                    a.navbar-brand{
+                        margin: 0;
+                        padding: 0;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                div.navbar-collapse{
+                    a{
+                        color:black;
+                    }
+                    li.index{
+                        a{
+                            color: white;
+                            background: -webkit-repeating-radial-gradient(circle,#C9E4F1,#26A8D4);
+                        }
+                    }
+                    li.active{
+                        a{
+                            background: -webkit-repeating-radial-gradient(circle,#C9E4F1,#26A8D4);
+                        }
+                    }
+                }
+            }
+        }
+        div.search{
+            width: 20%;
+            height: 80%;
+            float: left;
+            margin-top: 0.05rem;
+            form{
+                input{
+                    width: 80%;
+                    height: 0.38rem;
+                    background: none;
+                    border: 1px solid #67B1C1;
+                }
+                button{
+                    width: 13%;
+                    height: 0.38rem;
+                    font-size: 0.18rem;
+                    background: none;
+                    border: none;
+                    border-radius: 50%;
+                    color: white;
+                    outline: none;
+                    &:hover{
+                        background: #2AABD6;
+                    }
+                }
+            }
+        }
+        div.mine-center{
+            width: 12%;
+            float: left;
+            height: 100%;
+            img{
+                float: right;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+main{
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 0.7rem;
+    overflow: hidden;
+    aside{
+        width: 28%;
+        float: left;
+        margin-top: 0.3rem;
+        div.image{
+            height: 1.2rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        div.tag{
+            overflow: hidden;
+            background: white;
+            margin-top: 0.1rem;
+            padding-bottom: 0.1rem;
+            border-radius: 0.05rem;
+            a{
+                padding: 0.05rem 0.1rem;
+                font-size: 0.14rem;
+                display: block;
+                float: left;
+                margin-left: 0.1rem;
+                margin-top: 0.1rem;
+            }
+
+        }
+        div.intro{
+            background: white;
+            margin-top: 0.1rem;
+            border-radius: 0.05rem;
+            ul{
+                overflow: hidden;
+                margin-bottom: 0;
+                li{
+                    list-style-type: none;
+                    width: 40%;
+                    height: 0.3rem;
+                    float: left;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+                        display: block;
+                        height: 100%;
+                        line-height: 0.3rem;
+                    }
+                }
+            }
+            div{
+                a{
+                    .icon{
+                        font-size: 0.2rem;
+                        margin-right: 0.05rem;
+                    }
+                }
+            }
+        }
+    }
+    article{
+        width: 71%;
+        float: right;
+        font-family: '微软雅黑';
+        section{
+            width: 100%;
+            height: 2.7rem;
+             background: white;
+            margin-top: 0.1rem;
+            padding: 0.1rem;
+            border-radius: 0.03rem;
+            &:nth-child(1){
+                margin-top: 0;
+            }
+            div.section{
+                position: relative;
+                .title{
+                    a{
+                        font-size: 0.2rem;
+                    }
+                }
+                .belong{
+                    width: 30%;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    p.cate{
+                        float: left;
+                        .icon{
+                            color: indianred;
+                        }
+                    }
+                    p.tag{
+                        float: right;
+                        .icon{
+                            color: indianred;
+                        }
+                    }
+                }
+                .detail{
+                    overflow: hidden;
+                    .image{
+                        float: left;
+                        width: 34%;
+                        height: 1.7rem;
+                        padding: 0.05rem;
+                        border: 0.01rem solid gainsboro;
+                        img{
+                            width: 100%;
+                            height: 1.58rem;
+                        }
+                    }
+                    .content{
+                        float: left;
+                        width: 65%;
+                        padding-left: 0.1rem;
+                        line-height: 0.26rem;
+                        letter-spacing: 0.01rem;
+                    }
+                    .show{
+                        height: 0.3rem;
+                        width: 66%;
+                        position: absolute;
+                        right: 0;
+                        bottom: -0.2rem;
+                        p{
+                            margin-left: 0.2rem;
+                            float: left;
+                        }
+                        a{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        div.article{
+            background: white;
+            border-radius: 0.03rem;
+            div.title-name{
+                text-align: center;
+                font-size: 0.22rem;
+                color: #141617;
+                margin-bottom: 0.1rem;
+            }
+            div.detail{
+                overflow: hidden;
+                .belong{
+                    width: 33%;
+                    float: right;
+                    a:hover{
+                        text-decoration: none;
+                    }
+                    p.cate{
+                        float: left;
+                    }
+                    p.tag{
+                        float: right;
+                        a{
+                            padding-right: 0.03rem;
+                        }
+                    }
+                }
+                .author{
+                    width: 28%;
+                    float: right;
+                    text-align: right;
+                    padding-right: 0.3rem;
+                }
+            }
+            div.article-content{
+                padding: 0 0.25rem;
+                p{
+                    font-size: 0.16rem;
+                }
+            }
+            div.sign{
+                overflow: hidden;
+                p.updated{
+                    float: right;
+                    padding-right: 0.5rem;
+                    font-style: italic;
+                }
+            }
+        }
+        
+    }
+    div.empty{
+        margin: 0.8rem auto;
+        font-size: 0.34rem;
+        text-align: center;
+    }
+    div.oh-page{
+        margin-top: 0.3rem;
+      text-align: center;
+    }
+}
+footer{
+    width: 100%;
+    height: 0.6rem;
+    text-align: center;
+    margin-top: 0.2rem;
+    font-family: 'Microsoft YaHei';
+    border-top: 1px solid #b2dff1;
+    p{
+        height: 0.3rem;
+        line-height: 0.3rem;
+        margin-bottom: 0;
+    }
+    p.links{
+        margin-top: 0.2rem;
+        a{
+            color: #636b6f;
+            text-decoration: none;
+            padding-right: 0.1rem;
+            &:visited{
+                color: #636b6f;
+                text-decoration: none;
+            }
+            &:hover{
+                color: #636b6f;
+                text-decoration: none;
+            }
+        }
+    }
+    p.copyright{
+        font-size: 12px;
+        color: #BEBEBE;
+        a{
+            color: #BEBEBE;
+            text-decoration: none;
+            &:visited{
+                color: #BEBEBE;
+                text-decoration: none;
+            }
+            &:hover{
+                color: #BEBEBE;
+                text-decoration: none;
+            }
+        }
+    }
+}
+// 网络字体
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+
+
+
+//响应式
+@media only screen and (max-width: 800px){
+    header{
+        div{
+            div.menu{
+                width: 100%;
+                nav{
+                    div.navbar-collapse{
+                        ul{
+                            background: -webkit-linear-gradient(#34AFD8,#10556D);
+                        }
+                    }
+                }
+            }
+            div.search{
+                display: none;
+            }
+        }
+    }
+    main{
+        width: 100%;
+        margin-top: 0.6rem;
+        aside{
+            display: none;
+        }
+        article{
+            width: 100%;
+            section{
+                height: auto;
+                div.section{
+                    div.belong{
+                        width: 80%;
+                    }
+                    div.detail{
+                        div.image{
+                            display: none;
+                        }
+                        div.content{
+                            width: 100%;
+                            line-height: 0.18rem;
+                            letter-spacing: 0rem;
+                            padding-bottom: 0.1rem;
+                        }
+                        div.show{
+                            width: 100%;
+                            position: static;
+                        }
+                    }
+                }
+            }
+            div.article{
+                div.detail{
+                    .belong{
+                        width: 66%;
+                    }
+                }
+                div.article-content{
+                    p{
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        p{
+            span{
+                display: none;
+            }
+        }
+    }
+
+}
+#comment{
+    width: 100%;
+    background: white;
+    margin-top: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    .add-comment{
+        overflow: hidden;
+        .avatar{
+            width: 8%;
+            float: left;
+            padding-right: 0.1rem;
+            padding-top: 0.1rem;
+            img{
+                width: 0.45rem;
+                height: 0.45rem;
+                float: right;
+                border-radius: 3px;
+            }
+        }
+        .post-detail{
+            float: left;
+            width: 86%;
+        }
+    }
+    .comment-post{
+        width: 100%;
+        .post-show{
+            width: 100%;
+            overflow: hidden;
+            .editor{
+                float: left;
+                width: 100%;
+                height: 1rem;
+                margin-bottom: 2px;
+                textarea{
+                    width: 100%;
+                    height: 100%;
+                    resize:none;
+                    border-radius: 4px;
+                    outline: none;
+                    border: solid 1px #ccd0d2;
+                    &:focus{
+                        border: solid 1px #66b0e9;
+                    }
+                }
+            }
+        }
+        .post-submit{
+            width: 100%;
+            overflow: hidden;
+            margin-top: 2px;
+            .intro{
+                font-size: 12px;
+                float: left;
+                color: darkgray;
+                font-style: italic;
+                padding-left: 4%;
+            }
+            .submit{
+                float: right;
+                background: #C9E4F1;
+                width: 0.6rem;
+                height: 0.35rem;
+                line-height: 0.35rem;
+                font-size: 0.2rem;
+                text-align: center;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+
+    }
+    .comment-list{
+        width: 100%;
+        margin-top: 0.2rem;
+        border-top: solid 1px #C9E4F1;
+        margin-bottom: 0.2rem;
+        .comment-single{
+            margin-top: 0.2rem;
+            width: 100%;
+            overflow: hidden;
+            .avatar{
+                width: 8%;
+                float: left;
+                padding-right: 0.1rem;
+                padding-top: 0.1rem;
+                img{
+                    width: 0.45rem;
+                    height: 0.45rem;
+                    float: right;
+                    border-radius: 3px;
+                }
+            }
+            .comment-detail{
+                float: left;
+                width: 86%;
+                .comment-user{
+                    overflow: hidden;
+                    p{
+                        float: left;
+                        margin-right: 0.2rem;
+                    }
+                }
+                .comment-content{
+
+                }
+                .comment-actions{
+                    margin-top: 0.05rem;
+                    .post-time{
+
+                    }
+                    .reply{
+                        margin-left: 0.2rem;
+                        border: none;
+                        color: cornflowerblue;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

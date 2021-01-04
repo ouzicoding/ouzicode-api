@@ -1,0 +1,17 @@
+/node_modules
+/public/storage
+/storage/*.key
+/.idea
+Homestead.json
+Homestead.yaml
+.env
+/public/runtime.php.
+/pwd
+/.tags*
+docker-compose.yml
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+.vscode/
