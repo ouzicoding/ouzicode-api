@@ -15,3 +15,4 @@ docker-compose.yml
 /storage/framework/views/*
 /storage/logs/*
 .vscode/
+*.DS_Store
