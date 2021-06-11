@@ -12,6 +12,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/article', function () {
+Route::get('/article{id?}', function () {
     return 'get article list';
 });
