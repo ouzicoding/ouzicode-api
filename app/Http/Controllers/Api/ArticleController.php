@@ -16,9 +16,10 @@ class ArticleController extends ApiBaseController
     /**
      * 获取文章详情
      */
-    public function find()
+    public function find(\Illuminate\Http\Request $request)
     {
 
+        
     }
 
 
