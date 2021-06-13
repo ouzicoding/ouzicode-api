@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+
 class ArticleController extends ApiBaseController
 {
 
@@ -16,10 +18,10 @@ class ArticleController extends ApiBaseController
     /**
      * 获取文章详情
      */
-    public function find(\Illuminate\Http\Request $request)
+    public function find(Request $request)
     {
 
-        
+
     }
 
 
