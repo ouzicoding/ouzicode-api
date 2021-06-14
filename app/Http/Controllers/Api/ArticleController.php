@@ -12,6 +12,7 @@ class ArticleController extends ApiBaseController
     public function getList()
     {
 
+        return response()->json();
 
     }
 
