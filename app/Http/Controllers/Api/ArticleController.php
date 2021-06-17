@@ -16,6 +16,7 @@ class ArticleController extends ApiBaseController
 
     }
 
+
     /**
      * 获取文章详情
      */

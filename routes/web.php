@@ -18,4 +18,3 @@ Route::get('/', function () {
 });
 
 
-require '../routes/admin.php';
