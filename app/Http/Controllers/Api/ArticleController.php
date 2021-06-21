@@ -20,11 +20,10 @@ class ArticleController extends ApiBaseController
     /**
      * 获取文章详情
      */
-    public function find(Request $request)
+    public function find(Request $request,$id)
     {
 
         return response()->json();
-
     }
 
 
