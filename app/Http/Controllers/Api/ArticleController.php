@@ -22,7 +22,8 @@ class ArticleController extends ApiBaseController
      */
     public function find(Request $request,$id)
     {
-
+        $article = Article::get($id);
+        
         return response()->json();
     }
 
