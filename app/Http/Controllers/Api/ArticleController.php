@@ -11,6 +11,11 @@ class ArticleController extends ApiBaseController
      */
     public function getList()
     {
+        $where = [
+            ['is_deleted', '=', 0]
+        ];
+        $articles = Article::where($where)
+            ->get();
 
         return response()->json();
 
@@ -20,15 +25,13 @@ class ArticleController extends ApiBaseController
     /**
      * 获取文章详情
      */
-    public function find(Request $request,$id)
+    public function find(Request $request, $id)
     {
         $article = Article::get($id);
-        
+
+
         return response()->json();
     }
-
-
-
 
 
 }
