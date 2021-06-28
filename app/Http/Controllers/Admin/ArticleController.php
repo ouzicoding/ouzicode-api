@@ -9,6 +9,7 @@ class ArticleController extends AdminBaseController
     public function getList()
     {
 
+        return response()->json();
 
     }
 
