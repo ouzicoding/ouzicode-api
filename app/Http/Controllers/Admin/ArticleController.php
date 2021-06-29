@@ -18,6 +18,7 @@ class ArticleController extends AdminBaseController
      */
     public function find()
     {
+        return response()->json();
 
     }
 
