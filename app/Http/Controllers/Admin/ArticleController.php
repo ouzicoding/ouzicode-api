@@ -27,6 +27,7 @@ class ArticleController extends AdminBaseController
      */
     public function delete()
     {
+        return response()->json();
 
     }
 
