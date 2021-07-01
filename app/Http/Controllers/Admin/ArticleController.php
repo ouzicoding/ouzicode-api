@@ -36,6 +36,7 @@ class ArticleController extends AdminBaseController
      */
     public function update()
     {
+        return response()->json();
 
     }
 
