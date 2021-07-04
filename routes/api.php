@@ -19,6 +19,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-
+//api
 Route::middleware('auth:api')->get('/article', [ArticleController::class,'getList']);
 Route::middleware('auth:api')->get('/article/{id}', [ArticleController::class,'find']);
+
+//admin
+Route::middleware('auth:api')->get('/article', [ArticleController::class,'getList']);
+
