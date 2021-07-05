@@ -26,3 +26,5 @@ Route::middleware('auth:api')->get('/article/{id}', [ArticleController::class,'f
 //admin
 Route::middleware('auth:api')->get('/article', [ArticleController::class,'getList']);
 
+Route::group('');
+
