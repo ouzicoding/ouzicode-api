@@ -7,4 +7,5 @@ Route::get('/',function (){
     return 'hello admin';
 });
 
-Route::post('/admin/login',[LoginController::class,'login']);
+
+Route::post('/login',[\App\Http\Controllers\Admin\LoginController::class,'login']);

@@ -1,4 +1,5 @@
 <?php
+namespace App\Http\Controllers\Admin;
 
 class LoginController extends AdminBaseController
 {
