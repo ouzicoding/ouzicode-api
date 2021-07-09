@@ -21,7 +21,7 @@ class LoginController extends AdminBaseController
             ]
         ];
 
-        return $this->responseSuccess($data);
+        return response()->json($data);
     }
 
 
