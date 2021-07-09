@@ -1,14 +1,27 @@
 <?php
 namespace App\Http\Controllers\Admin;
 
+use Illuminate\Http\JsonResponse;
+
 class LoginController extends AdminBaseController
 {
 
 
-    public function login()
+    public function login(): JsonResponse
     {
 
-        return 'login success';
+        $data = [
+            [
+                'id'=>1,
+                'name'=>'apple'
+            ],
+            [
+                'id'=>2,
+                'name'=>'pear'
+            ]
+        ];
+
+        return $this->responseSuccess($data);
     }
 
 
