@@ -9,4 +9,9 @@ class ArticleFactory extends Factory
 
     protected $model = Article::class;
 
+    public function definition()
+    {
+        
+    }
+
 }
