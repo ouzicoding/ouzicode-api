@@ -14,6 +14,7 @@ class ArticleFactory extends Factory
 
         return [
             'title'=>$this->faker->name(),
+            'thumb'=>'',
         ];
     }
 
