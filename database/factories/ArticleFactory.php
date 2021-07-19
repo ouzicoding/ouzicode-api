@@ -16,6 +16,7 @@ class ArticleFactory extends Factory
             'title'=>$this->faker->name(),
             'thumb'=>'',
             'desc'=>'',
+            'content'=>'',
         ];
     }
 
