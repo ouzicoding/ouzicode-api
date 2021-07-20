@@ -17,6 +17,7 @@ class ArticleFactory extends Factory
             'thumb'=>'',
             'desc'=>'',
             'content'=>'',
+            'status'=>0,
         ];
     }
 
