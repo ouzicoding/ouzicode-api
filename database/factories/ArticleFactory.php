@@ -18,6 +18,7 @@ class ArticleFactory extends Factory
             'desc'=>'',
             'content'=>'',
             'status'=>0,
+            'is_released'=>0,
         ];
     }
 
