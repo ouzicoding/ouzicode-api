@@ -15,7 +15,7 @@ class ArticleFactory extends Factory
         return [
             'title'=>$this->faker->name(),
             'thumb'=>'',
-            'desc'=>'',
+            'digest'=>'',
             'content'=>'',
             'status'=>0,
             'is_released'=>0,
