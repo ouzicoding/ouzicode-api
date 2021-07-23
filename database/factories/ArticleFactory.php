@@ -19,7 +19,10 @@ class ArticleFactory extends Factory
             'content'=>'',
             'status'=>0,
             'is_released'=>0,
+            'category_id'=>0,
+            'tag_id'=>0,
         ];
     }
+
 
 }
