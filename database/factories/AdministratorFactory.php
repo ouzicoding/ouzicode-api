@@ -12,7 +12,7 @@ class AdministratorFactory extends Factory
     public function definition()
     {
         return [
-
+            'username'=>'',
         ];
     }
 
