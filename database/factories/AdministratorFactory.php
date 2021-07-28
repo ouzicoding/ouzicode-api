@@ -14,6 +14,7 @@ class AdministratorFactory extends Factory
         return [
             'account'=>'',
             'nickname'=>'',
+            'last_login_ip'=>'',
         ];
     }
 
