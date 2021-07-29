@@ -15,6 +15,7 @@ class AdministratorFactory extends Factory
             'account'=>'',
             'nickname'=>'',
             'last_login_ip'=>'',
+            'avatar'=>'',
         ];
     }
 
