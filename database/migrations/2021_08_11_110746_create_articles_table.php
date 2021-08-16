@@ -17,6 +17,7 @@ class CreateArticlesTable extends Migration
             $table->id();
             $table->string('title')->nullable(false)->default('');
             $table->string('thumb');
+            $table->text('digest');
             $table->integer('category_id')->nullable(false)->default(0);
             $table->integer('tag_id')->nullable(false)->default(0);
             $table->timestamps();
