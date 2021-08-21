@@ -21,6 +21,7 @@ class CreateAdministratorsTable extends Migration
             $table->string('avatar');
             $table->rememberToken();
             $table->string('login_ip');
+            $table->string('last_login_at');
             $table->timestamps();
         });
     }
