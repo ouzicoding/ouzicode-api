@@ -3,16 +3,13 @@
 use App\Http\Controllers\Admin\LoginController;
 use Illuminate\Support\Facades\Route;
 
-
-Route::get('/', function () {
+//首页
+Route::post('/', function () {
     return 'hello admin';
 });
 
 //登录
-
 Route::post('/login', [LoginController::class, 'login']);
-
-//首页
 
 //文章列表
 
