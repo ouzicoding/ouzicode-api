@@ -12,7 +12,7 @@ Route::post('/', function () {
 Route::post('/login', [LoginController::class, 'login']);
 
 //文章列表
-
+Route::post('articles', [ArticleController::class, 'articles']);
 //添加文章
 
 //删除文章
