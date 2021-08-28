@@ -17,6 +17,7 @@ Route::post('articles', [ArticleController::class, 'articles']);
 Route::post('article/add', [ArticleController::class, 'add']);
 
 //删除文章
+Route::post('article/delete', [ArticleController::class, 'delete']);
 
 //修改文章
 
