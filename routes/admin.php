@@ -20,6 +20,7 @@ Route::post('article/add', [ArticleController::class, 'add']);
 Route::post('article/delete', [ArticleController::class, 'delete']);
 
 //修改文章
+Route::post('article/edit', [ArticleController::class, 'edit']);
 
 //标签列表
 
