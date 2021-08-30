@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\TagController;
 use Illuminate\Support\Facades\Route;
 
 //首页
@@ -23,6 +25,7 @@ Route::post('article/delete', [ArticleController::class, 'delete']);
 Route::post('article/edit', [ArticleController::class, 'edit']);
 
 //标签列表
+Route::post('tags', [TagController::class, 'tags']);
 
 //添加标签
 
