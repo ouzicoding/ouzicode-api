@@ -6,7 +6,7 @@ class ArticleController extends AdminBaseController
     /**
      * 获取文章列表
      */
-    public function getList()
+    public function articles()
     {
 
         return response()->json();
