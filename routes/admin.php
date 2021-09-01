@@ -16,7 +16,7 @@ Route::post('/login', [LoginController::class, 'login']);
 //文章列表
 Route::post('articles', [ArticleController::class, 'articles']);
 //添加文章
-Route::post('article/add', [ArticleController::class, 'add']);
+Route::post('article/create', [ArticleController::class, 'create']);
 
 //删除文章
 Route::post('article/delete', [ArticleController::class, 'delete']);
