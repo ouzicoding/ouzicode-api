@@ -21,6 +21,14 @@ class ArticleController extends AdminBaseController
         return response()->json();
 
     }
+    /**
+     * 修改文章
+     */
+    public function create()
+    {
+        return response()->json();
+
+    }
 
     /**
      * 删除文章
