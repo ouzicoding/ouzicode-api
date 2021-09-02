@@ -16,7 +16,7 @@ class ArticleController extends AdminBaseController
     /**
      * 获取文章详情
      */
-    public function find()
+    public function detail()
     {
         return response()->json();
 
