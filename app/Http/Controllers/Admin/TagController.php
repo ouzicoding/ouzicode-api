@@ -13,5 +13,10 @@ class TagController extends AdminBaseController
         return response()->json();
     }
 
+    public function delete()
+    {
+
+        return response()->json();
+    }
 
 }
