@@ -26,4 +26,10 @@ class TagController extends AdminBaseController
         return response()->json();
     }
 
+    public function create(): JsonResponse
+    {
+
+        return response()->json();
+    }
+
 }
