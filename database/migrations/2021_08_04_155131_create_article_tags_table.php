@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateArticleTagsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * 文章 - 标签 关联表
      *
      * @return void
      */
