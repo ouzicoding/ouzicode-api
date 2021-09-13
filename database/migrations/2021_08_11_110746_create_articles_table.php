@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateArticlesTable extends Migration
 {
     /**
-     * Run the migrations.
+     * 文章表
      *
      * @return void
      */

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateLinksTable extends Migration
 {
     /**
-     * Run the migrations.
+     * 友情链接表
      *
      * @return void
      */
