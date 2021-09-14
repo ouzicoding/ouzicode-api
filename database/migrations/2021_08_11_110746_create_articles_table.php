@@ -21,7 +21,6 @@ class CreateArticlesTable extends Migration
             $table->text('content');
             $table->integer('browse')->nullable(false)->default(0);
             $table->integer('category_id')->nullable(false)->default(0);
-            $table->integer('tag_id')->nullable(false)->default(0);
             $table->tinyInteger('is_deleted')->nullable(false)->default(0);
             $table->timestamps();
         });
