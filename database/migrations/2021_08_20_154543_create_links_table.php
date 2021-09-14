@@ -17,6 +17,7 @@ class CreateLinksTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('url');
+            $table->string('is_deleted');
             $table->timestamps();
         });
     }
