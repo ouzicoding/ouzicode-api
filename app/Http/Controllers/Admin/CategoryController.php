@@ -19,7 +19,7 @@ class CategoryController extends AdminBaseController
 
     public function delete()
     {
-        
+
     }
 
 }
