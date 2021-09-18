@@ -20,6 +20,7 @@ class CategoryController extends AdminBaseController
     public function delete()
     {
 
+        return response()->json();
     }
 
 }
