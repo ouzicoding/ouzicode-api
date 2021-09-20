@@ -28,6 +28,7 @@ Route::post('article/edit', [ArticleController::class, 'edit']);
 Route::post('tags', [TagController::class, 'tags']);
 
 //添加标签
+Route::post('tag/create', [TagController::class, 'create']);
 
 //修改标签
 
