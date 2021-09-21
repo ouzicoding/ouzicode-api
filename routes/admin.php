@@ -17,6 +17,7 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::post('articles', [ArticleController::class, 'articles']);
 //添加文章
 Route::post('article/create', [ArticleController::class, 'create']);
+Route::post('article/update', [ArticleController::class, 'update']);
 
 //删除文章
 Route::post('article/delete', [ArticleController::class, 'delete']);
