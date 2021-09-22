@@ -14,21 +14,13 @@ Route::post('/', function () {
 Route::post('/login', [LoginController::class, 'login']);
 
 //文章列表
-Route::post('articles', [ArticleController::class, 'articles']);
-//添加文章
-Route::post('article/create', [ArticleController::class, 'create']);
-Route::post('article/update', [ArticleController::class, 'update']);
-
-//删除文章
-Route::post('article/delete', [ArticleController::class, 'delete']);
-
-//修改文章
-Route::post('article/edit', [ArticleController::class, 'edit']);
+Route::post('article', [ArticleController::class, 'create']);
+Route::delete('articles/{id}', [ArticleController::class, 'delete']);
+Route::put('articles/{id}', [ArticleController::class, 'update']);
+Route::get('articles', [ArticleController::class, 'articles']);
 
 //标签列表
 Route::post('tags', [TagController::class, 'tags']);
-
-//添加标签
 Route::post('tag/create', [TagController::class, 'create']);
 
 //修改标签
