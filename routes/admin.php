@@ -20,8 +20,10 @@ Route::put('articles/{id}', [ArticleController::class, 'update']);
 Route::get('articles', [ArticleController::class, 'articles']);
 
 //标签列表
-Route::post('tags', [TagController::class, 'tags']);
 Route::post('tag/create', [TagController::class, 'create']);
+Route::delete('tags/{id}', [TagController::class, 'delete']);
+Route::put('tags/{id}', [TagController::class, 'update']);
+Route::get('tags', [TagController::class, 'tags']);
 
 //修改标签
 
