@@ -25,6 +25,7 @@ Route::delete('tags/{id}', [TagController::class, 'delete']);
 Route::put('tags/{id}', [TagController::class, 'update']);
 Route::get('tags', [TagController::class, 'tags']);
 
+
 //修改标签
 
 //删除标签
