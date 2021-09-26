@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\TagController;
 use Illuminate\Support\Facades\Route;
@@ -20,23 +21,14 @@ Route::put('articles/{id}', [ArticleController::class, 'update']);
 Route::get('articles', [ArticleController::class, 'articles']);
 
 //标签列表
-Route::post('tag/create', [TagController::class, 'create']);
+Route::post('tag', [TagController::class, 'create']);
 Route::delete('tags/{id}', [TagController::class, 'delete']);
 Route::put('tags/{id}', [TagController::class, 'update']);
 Route::get('tags', [TagController::class, 'tags']);
 
-
-
-
-//修改标签
-
-//删除标签
-
 //分类列表
-
-//添加分类
-
-//编辑分类
-
-//删除分类
+Route::post('category', [CategoryController::class, 'create']);
+Route::delete('categories/{id}', [CategoryController::class, 'delete']);
+Route::put('categories/{id}', [CategoryController::class, 'update']);
+Route::get('categories', [CategoryController::class, 'categories']);
 
