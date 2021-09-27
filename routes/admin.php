@@ -32,3 +32,4 @@ Route::delete('categories/{id}', [CategoryController::class, 'delete']);
 Route::put('categories/{id}', [CategoryController::class, 'update']);
 Route::get('categories', [CategoryController::class, 'categories']);
 
+//友情链接
