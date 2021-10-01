@@ -10,4 +10,10 @@ class LinkController extends AdminBaseController
         return response()->json();
     }
 
+    public function delete()
+    {
+        return response()->json();
+
+    }
+
 }
