@@ -4,20 +4,20 @@ namespace App\Http\Controllers\Admin;
 class LinkController extends AdminBaseController
 {
 
-    public function links()
-    {
 
+    public function create()
+    {
         return response()->json();
     }
-
     public function delete()
     {
         return response()->json();
 
     }
 
-    public function create()
+    public function links()
     {
+
         return response()->json();
     }
 
