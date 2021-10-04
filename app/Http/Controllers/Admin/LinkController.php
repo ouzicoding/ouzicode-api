@@ -21,4 +21,9 @@ class LinkController extends AdminBaseController
         return response()->json();
     }
 
+    public function update()
+    {
+        return response()->json();
+    }
+
 }
