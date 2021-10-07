@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\LinkController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\TagController;
 use Illuminate\Support\Facades\Route;
@@ -33,5 +34,6 @@ Route::put('categories/{id}', [CategoryController::class, 'update']);
 Route::get('categories', [CategoryController::class, 'categories']);
 
 //友情链接
-Route::post('link',[]);
+Route::post('link',[LinkController::class,'create']);
+Route::delete('links/{id}',[LinkController::class,'delete']);
 
