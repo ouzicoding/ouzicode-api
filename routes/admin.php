@@ -36,4 +36,6 @@ Route::get('categories', [CategoryController::class, 'categories']);
 //友情链接
 Route::post('link',[LinkController::class,'create']);
 Route::delete('links/{id}',[LinkController::class,'delete']);
+Route::put('links/{id}',[LinkController::class,'update']);
+Route::get('links',[LinkController::class,'links']);
 
