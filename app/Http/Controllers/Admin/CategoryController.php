@@ -10,8 +10,9 @@ class CategoryController extends AdminBaseController
 
     public function categories()
     {
-        Category::all();
-        return response()->json();
+        $list = Category::orderBy('sort')->get();
+
+        return response()->json($list);
     }
 
     public function update()
