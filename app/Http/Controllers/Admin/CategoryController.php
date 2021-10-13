@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 
+use App\Models\Category;
+
 class CategoryController extends AdminBaseController
 {
 
     public function categories()
     {
-
+        Category::all();
         return response()->json();
     }
 
