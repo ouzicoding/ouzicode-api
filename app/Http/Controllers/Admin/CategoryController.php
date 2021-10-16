@@ -10,6 +10,9 @@ class CategoryController extends AdminBaseController
 
     public function create()
     {
+        $insertData = [];
+        Category::insertGetId($insertData);
+
         return response()->json();
     }
 
