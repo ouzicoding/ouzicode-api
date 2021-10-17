@@ -16,9 +16,9 @@ class CategoryController extends AdminBaseController
         return response()->json();
     }
 
-    public function delete()
+    public function delete($id)
     {
-
+        Category::deleted($id);
         return response()->json();
     }
 
