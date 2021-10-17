@@ -22,9 +22,10 @@ class CategoryController extends AdminBaseController
         return response()->json();
     }
 
-    public function update()
+    public function update($id)
     {
-
+        $updateData = [];
+        Category::where('id',$id)->update($updateData);
         return response()->json();
     }
 
