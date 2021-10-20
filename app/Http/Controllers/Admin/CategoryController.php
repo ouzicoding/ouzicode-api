@@ -13,7 +13,7 @@ class CategoryController extends AdminBaseController
     {
         $post = $request->input();
 
-        $insertData = $input;
+        $insertData = $post;
         Category::create($insertData);
 
         return response()->json();
@@ -21,7 +21,6 @@ class CategoryController extends AdminBaseController
 
     public function delete(Request $request,$id)
     {
-
         Category::deleted($id);
         return response()->json();
     }
