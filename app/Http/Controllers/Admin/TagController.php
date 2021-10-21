@@ -8,8 +8,7 @@ use Illuminate\Http\JsonResponse;
 class TagController extends AdminBaseController
 {
 
-
-    public function tags(): JsonResponse
+    public function create(): JsonResponse
     {
 
         return response()->json();
@@ -20,13 +19,14 @@ class TagController extends AdminBaseController
 
         return response()->json();
     }
+
     public function update(): JsonResponse
     {
 
         return response()->json();
     }
 
-    public function create(): JsonResponse
+    public function tags(): JsonResponse
     {
 
         return response()->json();
