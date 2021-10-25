@@ -17,9 +17,10 @@ class TagController extends AdminBaseController
         return response()->json();
     }
 
-    public function delete(): JsonResponse
+    public function delete($id): JsonResponse
     {
 
+        Tag::where('id',$id)->delete();
         return response()->json();
     }
 
