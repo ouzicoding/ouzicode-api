@@ -24,8 +24,10 @@ class TagController extends AdminBaseController
         return response()->json();
     }
 
-    public function update(): JsonResponse
+    public function update(Request $request,$id): JsonResponse
     {
+        $put = $request->input();
+        Tag::where('id',$id)->update($put);
 
         return response()->json();
     }
