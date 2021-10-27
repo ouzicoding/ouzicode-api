@@ -34,8 +34,8 @@ class TagController extends AdminBaseController
 
     public function tags(): JsonResponse
     {
-
-        return response()->json();
+        $list = Tag::select();
+        return response()->json($list);
     }
 
 }
