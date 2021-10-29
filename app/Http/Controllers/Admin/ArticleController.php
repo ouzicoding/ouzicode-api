@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers\Admin;
 use App\Models\Article;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 
 class ArticleController extends AdminBaseController
@@ -12,7 +13,8 @@ class ArticleController extends AdminBaseController
     public function create(Request $request)
     {
         $post = $request->input();
-        Article::create($post);
+        $articleId = Article::insertGetId($post);
+        Tag::createArticleTag($articleId,$post['tags']);
         return response()->json();
     }
     /**
