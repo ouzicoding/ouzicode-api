@@ -1,12 +1,15 @@
 <?php
 namespace App\Http\Controllers\Admin;
 
+use Illuminate\Http\Request;
+
 class LinkController extends AdminBaseController
 {
 
 
-    public function create()
+    public function create(Request $request)
     {
+
         return response()->json();
     }
     public function delete()
