@@ -9,7 +9,7 @@ class LinkController extends AdminBaseController
 
     public function create(Request $request)
     {
-
+        $post = $request->input();
         return response()->json();
     }
     public function delete()
