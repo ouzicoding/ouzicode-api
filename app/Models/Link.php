@@ -4,7 +4,9 @@
 namespace App\Models;
 
 
-class Link extends \Illuminate\Database\Eloquent\Model
+use Illuminate\Database\Eloquent\Model;
+
+class Link extends Model
 {
 
 }
