@@ -11,7 +11,7 @@ class LinkController extends AdminBaseController
     public function create(Request $request)
     {
         $post = $request->input();
-
+        Link::create($post);
         return response()->json();
     }
     public function delete($id)
