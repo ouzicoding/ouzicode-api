@@ -20,8 +20,10 @@ class LinkController extends AdminBaseController
         return response()->json();
 
     }
-    public function update()
+    public function update(Request $request,$id)
     {
+        $put = $request->input();
+        Link::where('id',$id)->update($put);
         return response()->json();
     }
     public function links()
