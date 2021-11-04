@@ -28,8 +28,8 @@ class LinkController extends AdminBaseController
     }
     public function links()
     {
-
-        return response()->json();
+        $list = Link::get();
+        return response()->json($list);
     }
 
 
