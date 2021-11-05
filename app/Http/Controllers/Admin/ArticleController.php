@@ -22,7 +22,7 @@ class ArticleController extends AdminBaseController
      */
     public function delete($id)
     {
-        Article::where('id',$id)->delete();
+        Article::where('id',$id)->update(['is_deleted'=>1]);
         return response()->json();
     }
     /**
@@ -42,7 +42,6 @@ class ArticleController extends AdminBaseController
         $list = Article::where([['is_deleted'=>0]])
             ->get();
         return response()->json($list);
-
     }
 
 

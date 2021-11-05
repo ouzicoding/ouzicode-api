@@ -18,7 +18,6 @@ class LinkController extends AdminBaseController
     {
         Link::where('id',$id)->delete();
         return response()->json();
-
     }
     public function update(Request $request,$id)
     {
