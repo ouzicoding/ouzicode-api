@@ -13,7 +13,6 @@ class CategoryController extends AdminBaseController
     public function create(Request $request)
     {
         $post = $request->input();
-
         $insertData = $post;
         Category::create($insertData);
 

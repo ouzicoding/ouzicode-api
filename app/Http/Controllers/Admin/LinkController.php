@@ -6,8 +6,6 @@ use Illuminate\Http\Request;
 
 class LinkController extends AdminBaseController
 {
-
-
     public function create(Request $request)
     {
         $post = $request->input();
