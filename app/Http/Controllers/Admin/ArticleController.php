@@ -14,7 +14,7 @@ class ArticleController extends AdminBaseController
     {
         $post = $request->input();
         $articleId = Article::insertGetId($post);
-        Tag::createArticleTag($articleId,$post['tags']);
+        Tag::createArticleTag($articleId,$post['tags']);w
         return response()->json();
     }
     /**
