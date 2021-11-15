@@ -23,6 +23,7 @@ class ArticleFactory extends Factory
     {
         return [
             'title' => $this->faker->name(),
+            'thumb' => 'http://img.studemy.com/Resources/jb/2021-03-25/20210325045355At676bXX3e.png',
             'digest'=> $this->faker->text(),
             'content'=> $this->faker->text(),
 
