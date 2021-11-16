@@ -26,6 +26,7 @@ class ArticleFactory extends Factory
             'thumb' => 'http://img.studemy.com/Resources/jb/2021-03-25/20210325045355At676bXX3e.png',
             'digest'=> $this->faker->text(),
             'content'=> $this->faker->text(),
+            'clicks'=> $this->faker->randomNumber(3,true),
 
         ];
     }
