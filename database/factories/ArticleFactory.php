@@ -27,6 +27,7 @@ class ArticleFactory extends Factory
             'digest'=> $this->faker->text(),
             'content'=> $this->faker->text(),
             'clicks'=> $this->faker->randomNumber(3,true),
+            'category_id'=> $this->faker->randomNumber(3,true),
 
         ];
     }
