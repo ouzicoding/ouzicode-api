@@ -28,7 +28,7 @@ class ArticleFactory extends Factory
             'content'=> $this->faker->text(),
             'clicks'=> $this->faker->randomNumber(3,true),
             'category_id'=> $this->faker->randomNumber(3,true),
-
+            'is_deleted'=> 0,
         ];
     }
 }
