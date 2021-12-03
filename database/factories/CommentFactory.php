@@ -22,7 +22,7 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            'user_id'=>1
+            'user_id'=>$this->faker->randomNumber(3,true),
         ];
     }
 }
