@@ -24,6 +24,7 @@ class CommentFactory extends Factory
         return [
             'user_id'=>$this->faker->randomNumber(3,true),
             'article_id'=>$this->faker->randomNumber(3,true),
+            'parent_id'=>$this->faker->randomNumber(3,true),
         ];
     }
 }
