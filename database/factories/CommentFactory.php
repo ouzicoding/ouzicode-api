@@ -26,6 +26,8 @@ class CommentFactory extends Factory
             'article_id'=>$this->faker->randomNumber(3,true),
             'parent_id'=>$this->faker->randomNumber(3,true),
             'content'=>$this->faker->text(),
+            'is_deleted'=>0,
+
         ];
     }
 }
