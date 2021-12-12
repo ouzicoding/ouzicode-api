@@ -22,7 +22,7 @@ class LinkFactory extends Factory
     public function definition()
     {
         return [
-            //
+
         ];
     }
 }
