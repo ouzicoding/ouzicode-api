@@ -24,6 +24,7 @@ class LinkFactory extends Factory
         return [
             'name'=>$this->faker->name(),
             'url'=>$this->faker->imageUrl(),
+            'is_deleted'=>0,
         ];
     }
 }
