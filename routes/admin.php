@@ -21,17 +21,17 @@ Route::delete('articles/{id}', [ArticleController::class, 'delete']);
 Route::put('articles/{id}', [ArticleController::class, 'update']);
 Route::get('articles', [ArticleController::class, 'articles']);
 
-//标签
-Route::post('tag', [TagController::class, 'create']);
-Route::delete('tags/{id}', [TagController::class, 'delete']);
-Route::put('tags/{id}', [TagController::class, 'update']);
-Route::get('tags', [TagController::class, 'tags']);
-
 //分类
 Route::post('category', [CategoryController::class, 'create']);
 Route::delete('categories/{id}', [CategoryController::class, 'delete']);
 Route::put('categories/{id}', [CategoryController::class, 'update']);
 Route::get('categories', [CategoryController::class, 'categories']);
+
+//标签
+Route::post('tag', [TagController::class, 'create']);
+Route::delete('tags/{id}', [TagController::class, 'delete']);
+Route::put('tags/{id}', [TagController::class, 'update']);
+Route::get('tags', [TagController::class, 'tags']);
 
 //友情链接
 Route::post('link',[LinkController::class,'create']);

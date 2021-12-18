@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\Admin;
 use App\Models\Article;
 use App\Models\Tag;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class ArticleController extends AdminBaseController
@@ -10,7 +11,7 @@ class ArticleController extends AdminBaseController
     /**
      * 修改文章
      */
-    public function create(Request $request)
+    public function create(Request $request): JsonResponse
     {
         $post = $request->input();
         $articleId = Article::insertGetId($post);
