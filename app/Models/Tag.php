@@ -16,7 +16,7 @@ class Tag extends Model
     public static function createArticleTag($articleId,$tags)
     {
 //        批量创建
-
+        self::
 
 
     }
