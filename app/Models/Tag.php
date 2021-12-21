@@ -16,9 +16,14 @@ class Tag extends Model
     public static function createArticleTag($articleId,$tags)
     {
 //        批量创建
-        self::
-
-
+        $list = [];
+        foreach ($tags as $tag) {
+            $list[] = [
+                'article_id'=>$articleId,
+                'tag_id'=>$tag,
+            ];
+        }
+        self::insert($list);
     }
 
 
